@@ -14,7 +14,7 @@ export class SettingsService {
    }
 
   saveSettings() {
-    console.log('Guardando en el localStorage');
+    // console.log('Guardando en el localStorage');
     localStorage.setItem('settings', JSON.stringify( this.settings ));
   }
 
