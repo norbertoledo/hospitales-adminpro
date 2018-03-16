@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
 /*Rutas*/
 import { APP_ROUTES } from './app.routes';
 
@@ -16,6 +15,9 @@ import { AppComponent } from './app.component';
 // temporal
 import { FormsModule } from '@angular/forms';
 
+// Servicios MODULO
+import { ServiceModule } from './services/service.module';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -25,7 +27,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     PagesModule,
     LoginModule,
-    FormsModule
+    FormsModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
